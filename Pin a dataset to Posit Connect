@@ -1,0 +1,20 @@
+# https://www.youtube.com/watch?v=q7yCapEdzhk&list=PL9HYL-VRX0oTOK4cpbCbRk15K2roEgzVW&index=22
+
+library(pins)
+
+# Set up Posit Connect as our board 
+# Tools ---> Global Options ---> Publishing
+
+# Connect to Posit Connect 
+my_board <- pins::board_connect()
+
+# pin the mtcars dataset to connect
+pins::pin_write(x = mtcars,
+                board = my_board,
+                name = "mtcars_dataset",
+                type = "csv")
+
+# Read Pinned dataset 
+pins::pin_read(board = my_board,
+               name = "ryan/mtcars_dataset")
+
