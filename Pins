@@ -1,0 +1,7 @@
+https://www.youtube.com/watch?v=3Yk6U_XqxNo&list=PL9HYL-VRX0oTOK4cpbCbRk15K2roEgzVW&index=53
+
+# board is a filepath, it can be a dropbox folder, Posit Connect, Github, and et al.
+
+# board can be versioned, by default it is not, but it can be versioned at pin level.
+
+board_folder("",versioned=TRUE)
